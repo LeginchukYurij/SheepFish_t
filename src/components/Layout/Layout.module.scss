@@ -1,0 +1,12 @@
+.app-layout {
+  display: grid;
+  grid-template-columns: minmax(200px, 22%) 1fr;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
+.main {
+  padding: var(--containerPdTop) var(--containerPd) var(--containerPd)
+    var(--containerPd);
+  background-color: var(--bg);
+}

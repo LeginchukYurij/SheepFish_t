@@ -1,17 +1,25 @@
 :root {
   --accent: #7047eb;
+  --dark: #333;
   --bg: #fff;
   --txt: #25252d;
   --txtHover: #25252d;
+  --grayDarkenPlus: #e6e6ea;
   --grayDarken: #a8a8ab;
   --gray: #f7f7f8;
+  --sidebarbg: #f1f1f4;
+  --containerPdTop: 30px;
+  --containerPd: 40px;
 }
 
 :root[data-theme='dark'] {
+  --dark: #fff;
   --accent: #7047eb;
   --bg: #212027;
   --txt: #c8c8d0;
   --txtHover: #f2f2f3;
+  --grayDarkenPlus: #2e2d34;
   --grayDarken: #4f4e59;
   --gray: #29282f;
+  --sidebarbg: #26252c;
 }
