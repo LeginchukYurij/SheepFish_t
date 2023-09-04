@@ -1,0 +1,17 @@
+:root {
+  --accent: #7047eb;
+  --bg: #fff;
+  --txt: #25252d;
+  --txtHover: #25252d;
+  --grayDarken: #a8a8ab;
+  --gray: #f7f7f8;
+}
+
+:root[data-theme='dark'] {
+  --accent: #7047eb;
+  --bg: #212027;
+  --txt: #c8c8d0;
+  --txtHover: #f2f2f3;
+  --grayDarken: #4f4e59;
+  --gray: #29282f;
+}
