@@ -1,11 +1,11 @@
 @import 'normalize.css';
 @import './variables.css';
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--txt);
@@ -25,4 +25,8 @@ body {
 *:after,
 *:before {
   box-sizing: border-box;
+}
+
+* {
+  outline: none;
 }
