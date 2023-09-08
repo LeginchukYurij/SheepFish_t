@@ -1,16 +1,18 @@
-import SearchField from '@UI/SearchField';
 import ActionsRow from '@components/ActionsRow';
 import PageHeading from '@components/PageHeading';
-import Table from '@components/Table';
+import ProductsTableContainer from '@containers/ProductsTableContainer';
+import SearchContainer from '@containers/SearchContainer';
+import AddProductModal from '@components/AddProductModal';
 
 const Home = () => {
   return (
     <>
-      <PageHeading title='Home' />
+      <AddProductModal />
+      <PageHeading title='Products' />
       <ActionsRow>
-        <SearchField placeholder='Search by name or keyword' />
+        <SearchContainer />
       </ActionsRow>
-      <Table />
+      <ProductsTableContainer />
     </>
   );
 };

@@ -2,3 +2,13 @@
   width: 100%;
   border-spacing: 0;
 }
+
+.scroll {
+  padding-bottom: 15px;
+  overflow-x: auto;
+  width: calc(100% + var(--containerPd) + var(--containerPd));
+  margin-left: calc(-1 * var(--containerPd));
+  margin-right: calc(-1 * var(--containerPd));
+  padding-left: var(--containerPd);
+  padding-right: var(--containerPd);
+}

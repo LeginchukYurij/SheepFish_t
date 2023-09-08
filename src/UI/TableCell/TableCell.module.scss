@@ -7,4 +7,10 @@
     height: 100%;
     width: 100%;
   }
+
+  a {
+    font-weight: bold;
+    color: var(--txt);
+    text-decoration: underline;
+  }
 }

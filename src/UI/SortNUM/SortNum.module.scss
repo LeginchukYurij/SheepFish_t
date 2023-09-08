@@ -1,0 +1,21 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  svg {
+    fill: var(--txt);
+  }
+
+  &.active svg {
+    fill: var(--accent);
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

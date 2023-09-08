@@ -6,8 +6,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
   color: var(--txt);
 }
 
@@ -16,9 +15,8 @@ code {
     monospace;
 }
 
-html,
-body {
-  overflow: hidden;
+html {
+  overflow-x: hidden;
 }
 
 *,
@@ -29,4 +27,16 @@ body {
 
 * {
   outline: none;
+}
+
+a {
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.noscroll {
+  overflow: hidden;
 }

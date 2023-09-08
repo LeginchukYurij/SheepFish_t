@@ -1,12 +1,29 @@
 .app-layout {
   display: grid;
-  grid-template-columns: minmax(200px, 22%) 1fr;
+  grid-template-columns: minmax(200px, 22%) minmax(200px, 88%);
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
+.app-layout-2 {
+  display: grid;
+  grid-template-columns: 100%;
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
 }
 
 .main {
+  position: relative;
   padding: var(--containerPdTop) var(--containerPd) var(--containerPd)
     var(--containerPd);
   background-color: var(--bg);
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    display: grid;
+    grid-template-columns: 100%;
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+  }
 }

@@ -1,11 +1,15 @@
 import { AiOutlineMenuFold } from 'react-icons/ai';
 import PropTypes from 'prop-types';
 import styles from './ToggleBtn.module.scss';
+import { useDispatch } from 'react-redux';
+import { toggle } from '@redux/sidebarSlice';
 
-const ToggleBtn = ({ onClick, title }) => {
+const ToggleBtn = ({ title }) => {
+  const dispatch = useDispatch();
+
   return (
     <button
-      onClick={onClick}
+      onClick={() => dispatch(toggle())}
       className={styles.btn}
       title={title}>
       <AiOutlineMenuFold />
@@ -14,7 +18,6 @@ const ToggleBtn = ({ onClick, title }) => {
 };
 
 ToggleBtn.propTypes = {
-  onClick: PropTypes.func,
   title: PropTypes.string,
 };
 

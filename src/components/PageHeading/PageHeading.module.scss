@@ -3,11 +3,27 @@
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  margin-bottom: 65px;
+  margin-bottom: 35px;
+  position: sticky;
+  top: 0;
+  background-color: var(--bg);
+  padding-top: var(--containerPdTop);
+  padding-bottom: var(--containerPdTop);
+  width: calc(100% + var(--containerPd) + var(--containerPd));
+  padding-left: var(--containerPd);
+  padding-right: var(--containerPd);
+  margin-left: calc(-1 * var(--containerPd));
+  margin-right: calc(-1 * var(--containerPd));
+  margin-top: calc(-1 * var(--containerPdTop));
+  z-index: 3;
 
   & > div {
     display: flex;
     align-items: center;
     gap: 15px;
+  }
+
+  &.sticky {
+    box-shadow: var(--bs);
   }
 }

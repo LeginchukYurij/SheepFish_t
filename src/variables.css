@@ -10,6 +10,7 @@
   --sidebarbg: #f1f1f4;
   --containerPdTop: 30px;
   --containerPd: 40px;
+  --bs: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 :root[data-theme='dark'] {
@@ -22,4 +23,12 @@
   --grayDarken: #4f4e59;
   --gray: #29282f;
   --sidebarbg: #26252c;
+  --bs: rgba(149, 157, 165, 0.05) 0px 8px 24px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --containerPdTop: 20px;
+    --containerPd: 15px;
+  }
 }
